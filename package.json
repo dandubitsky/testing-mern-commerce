@@ -7,7 +7,9 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "lint": "eslint",
+    "lint:fix": "eslint . --fix"
   },
   "keywords": [],
   "author": "",
@@ -15,11 +17,14 @@
   "dependencies": {
     "@faker-js/faker": "^7.6.0",
     "casual": "^1.6.2",
+    "playwright": "^1.32.3",
     "superagent": "^8.0.9"
   },
   "devDependencies": {
+    "@playwright/test": "^1.32.3",
     "chai": "^4.3.7",
     "chai-subset": "^1.6.0",
+    "eslint": "^8.38.0",
     "mocha": "^10.2.0"
   }
 }
